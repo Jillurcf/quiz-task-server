@@ -7,7 +7,7 @@ const app = express();
 
 
 app.get('/health', (req, res) => {
-    res.send('assignment12')
+    res.send('quizTask')
 })
 
 app.all('*', (req, res, next)=>{

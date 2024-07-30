@@ -7,8 +7,13 @@
   "main": "index.js",
   
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+  
+    
+  "start": "node index.js",
+  
+    
+  "dev": "nodemon index.js",
+  
     
   "test": "echo \"Error: no test specified\" && exit 1"
   
@@ -32,6 +37,9 @@
   
     
   "express": "^4.19.2",
+  
+    
+  "mongoose": "^8.5.1",
   
     
   "mongose": "^0.0.2-security",
