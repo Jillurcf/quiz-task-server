@@ -5,4 +5,5 @@ const createToken =(user)=>{
     return token;
 }
 
+
 module.exports = createToken

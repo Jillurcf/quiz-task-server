@@ -1,4 +1,4 @@
 const createUsers = require('../../api/Users/Controllers/users');
 const router = require('express').Router();
-router.post('/Users', createUsers);
+router.post('/users', createUsers);
 module.exports = router;
