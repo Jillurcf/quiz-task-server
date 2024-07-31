@@ -1,10 +1,19 @@
 const { error } = require("console");
 const express = require("express");
+const applyMiddleware = require("./middleware/applyMiddleware");
 require("dotenv").config();
 const app = express();
 
 
 
+
+const getUsers = require('./routes/GetUsers');
+const createUsers = require('./routes/Users')
+applyMiddleware(app)
+
+
+app.use(createUsers);
+app.use(getUsers);
 
 app.get('/health', (req, res) => {
     res.send('quizTask')
