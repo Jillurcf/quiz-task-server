@@ -1,8 +1,8 @@
-const { model, Schema } = require("mongoose");
+const mongoose = require('mongoose');
 
-const RegisterSchema = new Schema({
-  name: "string",
-  image: "string",
+const RegisterSchema = new mongoose.Schema({
+  name: String,
+  image: String,
   email: {
     type: String,
   },
@@ -12,11 +12,10 @@ const RegisterSchema = new Schema({
   role: {
     type: String,
   },
-
   status: {
     type: String,
   },
 });
 
-const Register = model("Register", RegisterSchema);
+const Register = mongoose.model('Register', RegisterSchema);
 module.exports = Register;
